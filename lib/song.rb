@@ -20,10 +20,4 @@ class Song
     artist.add_song(self) unless artist.songs.include?(self)
   end
 
-
-
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
-
 end
